@@ -181,7 +181,7 @@ bt-request-peer-speed-limit=10M
 - 复制粘贴下面的东西,并修改密码 vim 操作比较反人类 也可以使用`gedit`等
 - 先按`:` 再输入 `wq`保存退出
 - 然后重新加载 aria2 init.d 的配置 `systemctl daemon-reload`
-- 最后`service aria2c start试试`
+- 最后`sudo service aria2c start`试试
 
 ```
 #!/bin/sh
@@ -200,7 +200,7 @@ start)
 
 echo -n "Starting aria2c"
 
-sudo aria2c --conf-path=/etc/aria2/aria2.conf -D
+sudo -u root -p 账户密码 aria2c --conf-path=/etc/aria2/aria2.conf -D
 
 ;;
 
