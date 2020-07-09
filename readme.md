@@ -142,8 +142,8 @@ peer-agent=Transmission/2.94
 # 继续之前的BT任务时, 无需再次校验, 默认:false
 bt-seed-unverified=true
 
-# 单个种子最大连接数, 默认:55 0表示不限制
-bt-max-peers=0
+# 单个种子最大连接数, 默认:55  PT站似乎对这个很在意 那就改的比TR还小呗
+bt-max-peers=30
 # 最小分享率
 seed-ratio = 0
 # 最小做种时间, 单位:分
