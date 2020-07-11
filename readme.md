@@ -141,7 +141,8 @@ peer-agent=Transmission/2.94
 
 # 继续之前的BT任务时, 无需再次校验, 默认:false
 bt-seed-unverified=true
-
+# 针对BT服务器的请求间隔 为了降低PT站负载,这里最好设置大点
+bt-tracker-interval=60
 # 单个种子最大连接数, 默认:55  PT站似乎对这个很在意 那就改的比TR还小呗
 bt-max-peers=30
 # 最小分享率
